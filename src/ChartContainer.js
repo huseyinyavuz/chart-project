@@ -12,7 +12,6 @@ class ChartContainer extends React.Component{
     }
 
     render(){
-        console.log(this.props);
         if(!this.props.loading && this.props.chartData){
             const data = this.props.chartData[0];
             const max = Math.max(...[Math.max(...data.male), Math.max(...data.female)]);
